@@ -2,6 +2,23 @@
 // COLOR VARIABLES
 //=======================================
 
+$white: #fff;
 $color-text-base: #777;
 $color-primary: #58e1c1;
 $button-default: #51ddfc;
+$button-error: #e4757a;
+$button-success: #63cc82;
+$button-warning: #fd7856;
+$button-info: #927bc1;
+
+//=======================================
+// COLOR FUNCTIONS
+//=======================================
+
+$default-light: lighten($button-default, 15%);
+
+//=======================================
+// MEDIA QUERY BREAKPOINTS
+//=======================================
+
+$break-narrow: '(min-width: 768px)';

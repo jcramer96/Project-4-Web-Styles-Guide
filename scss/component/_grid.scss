@@ -4,12 +4,23 @@
 
 .container {
     padding: 0 10px;
+
+    @media #{$break-narrow} {
+      max-width: 1400px;
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
   }
   
   .row {
     display: flex;
     flex-direction: column;
     padding: 1em 10px;
+
+    @media #{$break-narrow} {
+      flex-direction: row;
+    }
   }
   
   [class^=col] {
@@ -18,14 +29,21 @@
     min-height: 25px;
     padding: 10px;
     border-radius: 5px;
+
+    @media #{$break-narrow} {
+      display: flex;
+      justify-content: center;
+      margin-top: 0;
+      align-items: center;
+    }
   }
   
   .theme.col-1 {
-    background-color: #927bc1;
+    background-color: $button-info;
   }
   
   .theme.col-2 {
-    background-color: #fd7856;
+    background-color: $button-warning;
   }
   
   .theme.col-3 {
@@ -53,11 +71,11 @@
   }
   
   .theme.col-9 {
-    background-color: #e4757a;
+    background-color: $button-error;
   }
   
   .theme.col-10 {
-    background-color: #63cc82;
+    background-color: $button-success;
   }
   
   .theme.col-11 {

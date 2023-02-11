@@ -14,6 +14,11 @@
   
   a {
     text-decoration: none;
+
+    &:hover {
+      color: $default-light;
+      transition: color 1s;
+    }
   }
   
   
@@ -21,14 +26,16 @@
   /*              Typography                       */
   /* ============================================= */
   
-  .headline-primary {
-    color: $color-primary;
-    margin-left: 10px;
-  }
-  
-  .headline-secondary {
-    font-weight: 300;
-    color: $color-text-base;
+  .headline {
+    &-primary {
+      color: $color-primary;
+      margin-left: 10px;
+    }
+    
+    &-secondary {
+      font-weight: 300;
+      color: $color-text-base;
+    }
   }
   
   .link {

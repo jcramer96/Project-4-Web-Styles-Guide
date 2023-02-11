@@ -18,21 +18,46 @@
   
   .default {
     background-color: $button-default;
+
+    &:hover {
+      background-color: $default-light;
+      transition: background-color .3s;
+    }
   }
   
   .error {
     background-color: $button-error;
+
+    &:hover {
+      background-color: $error-light;
+      transition: background-color .3s;
+    }
   }
   
   .info {
     background-color: $button-info;
+
+    &:hover {
+      background-color: $info-light;
+      transition: background-color .3s;
+    }
   }
   
   .success {
     background-color: $button-success;
+
+    &:hover {
+      background-color: $success-light;
+      transition: background-color .3s;
+    }
   }
   
   .warning {
     background-color: $button-warning;
+
+    &:hover {
+      background-color: $warning-light;
+      transition: background-color .3s;
+    }
   }
   

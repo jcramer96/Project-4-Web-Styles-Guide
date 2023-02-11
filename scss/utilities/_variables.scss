@@ -16,6 +16,10 @@ $button-info: #927bc1;
 //=======================================
 
 $default-light: lighten($button-default, 15%);
+$error-light: lighten($button-error, 15%);
+$success-light: lighten($button-success, 15%);
+$warning-light: lighten($button-warning, 15%);
+$info-light: lighten($button-info, 15%);
 
 //=======================================
 // MEDIA QUERY BREAKPOINTS
